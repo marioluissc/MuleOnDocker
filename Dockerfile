@@ -19,6 +19,7 @@ CMD [ "/opt/mule/bin/mule" ]
 
 # Default http port
 EXPOSE 8081
+EXPOSE 8088
 
 ADD SearchAds /opt/mule/apps
 ADD APITest /opt/mule/apps
