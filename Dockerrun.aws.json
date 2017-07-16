@@ -3,6 +3,12 @@
   "Logging": "/opt/mule/logs",
   "Image": {
   	"Update": "false"
-  }
-  
+  },
+  "Ports": [
+   {
+
+     "ContainerPort": "80"
+
+   }
+ ]
 }

@@ -15,9 +15,23 @@ http://www.mulesoft.org/schema/mule/ee/dw http://www.mulesoft.org/schema/mule/ee
 %output application/json
 ---
 {
-	"fake" : "data",
+	"fake" : p("sns.topic"),
 	"message" : "success"
 
+}
+]]></dw:set-payload>
+        </dw:transform-message>
+    </flow>
+		<flow name="searchadsFlow2">
+        <http:listener config-ref="HTTP_Listener_Configuration" path="/api/get-data2" allowedMethods="GET" doc:name="HTTP"/>
+        <dw:transform-message doc:name="Transform Message">
+            <dw:set-payload><![CDATA[%dw 1.0
+%output application/json
+---
+{
+	"fake2" : p("sns.topic"),
+	"message" : "success",
+	"FLOW" : "2"
 }
 ]]></dw:set-payload>
         </dw:transform-message>

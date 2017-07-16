@@ -21,3 +21,6 @@ CMD [ "/opt/mule/bin/mule" ]
 EXPOSE 80
 
 ADD SearchAds /opt/mule/apps/SearchAds
+
+RUN cd bin
+RUN ./amc_setup -H 97860406-5578-4387-88b8-0482a3fa93cc---9719 test-docker

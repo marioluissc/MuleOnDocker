@@ -15,8 +15,8 @@ http://www.mulesoft.org/schema/mule/ee/dw http://www.mulesoft.org/schema/mule/ee
 %output application/json
 ---
 {
-	"fake" : "data",
-	"message" : "success"
+	"fake" : p("sns.topic"),
+	"message" : "success_classes"
 
 }
 ]]></dw:set-payload>
