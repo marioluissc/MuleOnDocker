@@ -61,8 +61,8 @@ then
     mkdir "$BASE_DIR/tools"
 fi
 
-if [ -f "$BASE_DIR/bin/agent-setup-1.4.1-amc-final.jar" ]
+if [ -f "$BASE_DIR/bin/agent-setup-1.7.0-mule-3.x-amc-final.jar" ]
 then
-    mv "$BASE_DIR/bin/agent-setup-1.4.1-amc-final.jar" "$BASE_DIR/tools"
+    mv "$BASE_DIR/bin/agent-setup-1.7.0-mule-3.x-amc-final.jar" "$BASE_DIR/tools"
 fi
-java -jar "$BASE_DIR/tools/agent-setup-1.4.1-amc-final.jar" $*
+java -jar "$BASE_DIR/tools/agent-setup-1.7.0-mule-3.x-amc-final.jar" $*
