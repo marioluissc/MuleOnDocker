@@ -10,7 +10,7 @@ EXPOSE 1880
 
 
 # Define mount points.
-VOLUME ["/usr/local/bin/node-red"]
+#VOLUME ["/usr/local/bin/node-red"]
 
 #ADD App /usr/local/bin/node-red/data
 
