@@ -2,6 +2,8 @@ FROM node:6
 
 MAINTAINER cpswan
 
+VOLUME ["/usr/local/bin/node-red"]
+
 # install node-red
 RUN npm install -g node-red
 
@@ -10,7 +12,7 @@ EXPOSE 1880
 
 
 # Define mount points.
-#VOLUME ["/usr/local/bin/node-red"]
+
 
 #ADD App /usr/local/bin/node-red/data
 
