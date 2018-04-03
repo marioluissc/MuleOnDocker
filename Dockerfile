@@ -9,7 +9,7 @@ RUN npm install -g node-red
 EXPOSE 1880
 
 # Define mount points.
-VOLUME ["/usr/local/bin/node-red"]
+#VOLUME ["/usr/local/bin/node-red"]
 VOLUME ["/usr/local/.node-red"]
 VOLUME ["$HOME/.node-red"]
 
