@@ -38,7 +38,7 @@
         "type": "function",
         "z": "6454e2cc.a3f34c",
         "name": "",
-        "func": "var objects = [];\nvar object = {};\nobject.name = 'Mario';\nobject.age = '32';\nobjects.push(object);\nmsg.payload = JSON.stringify(objects);\n\nreturn msg;",
+        "func": "var objects = [];\nvar object = {};\nobject.name = 'Mario';\nobject.age = '35';\nobjects.push(object);\nmsg.payload = JSON.stringify(objects);\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "x": 610,
