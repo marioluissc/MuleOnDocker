@@ -10,3 +10,9 @@ EXPOSE 1880
 
 # Define mount points.
 #VOLUME ["/data"]
+CMD cd $HOME/.node-red
+CMD ls
+
+ADD App $HOME/.node-red
+
+CMD ls
