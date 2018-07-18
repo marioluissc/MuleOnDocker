@@ -11,7 +11,7 @@ EXPOSE 1880
 # Define mount points.
 #VOLUME ["/usr/local/bin/node-red"]
 VOLUME ["/root/.node-red"]
-
+#MarioCommentario
 ADD App /root/.node-red
 CMD ECHO "AFTER ADDING FILES" 
 CMD ls
